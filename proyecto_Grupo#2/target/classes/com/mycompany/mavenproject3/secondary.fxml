@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox fx:id="JuegoM" alignment="CENTER" spacing="20.0" styleClass="bodybg" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject3.SecondaryController">
+    <children>
+        <Label alignment="CENTER" prefHeight="17.0" prefWidth="241.0" text="Juego de Memoria para Clientes" textAlignment="CENTER" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="63.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="63.0" text="Timer" />
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="65.0" text="Aciertos" />
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="63.0" text="Fallos" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="time" alignment="CENTER" prefHeight="23.0" prefWidth="100.0" text="00:00:00" textAlignment="CENTER" />
+                  <Label fx:id="Aciertos" alignment="CENTER" prefHeight="21.0" prefWidth="100.0" text="0" />
+                  <Label fx:id="Fallos" alignment="CENTER" prefHeight="23.0" prefWidth="100.0" text="0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="114.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#TimerStart" prefHeight="25.0" prefWidth="115.0" text="Start Game" />
+               </children>
+            </VBox>
+         </children></HBox>
+      <GridPane fx:id="cartas" prefHeight="336.0" prefWidth="469.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="130.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="131.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle fx:id="Luigi" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.rowIndex="1" />
+            <Rectangle fx:id="Wario" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.rowIndex="2" />
+            <Rectangle fx:id="Peach" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.rowIndex="3" />
+            <Rectangle fx:id="Boy" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Rectangle fx:id="Luigi" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Rectangle fx:id="Mario" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Rectangle fx:id="DK" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Rectangle fx:id="Wario" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.rowIndex="4" />
+            <Rectangle fx:id="Daisy" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Rectangle fx:id="Boy" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.rowIndex="5" />
+            <Rectangle fx:id="Bowser" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Rectangle fx:id="Daisy" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Rectangle fx:id="Mario" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Rectangle fx:id="Toadette" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Rectangle fx:id="DK" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Rectangle fx:id="Bowser" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Rectangle fx:id="Toadette" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Rectangle fx:id="Birdo" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Rectangle fx:id="Peach" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Rectangle fx:id="Birdo" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" onMouseClicked="#cambio" stroke="BLACK" strokeType="INSIDE" width="116.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+        <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Menu Principal" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

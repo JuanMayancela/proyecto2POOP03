@@ -1,0 +1,12 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 18 ene. 2023, 21:20:44
+    Author     : Win1OPro Station
+*/
+
+.bodybg{
+    -fx-background-image: url("/Imagenesjuego/BackGround1.jpeg");
+}
